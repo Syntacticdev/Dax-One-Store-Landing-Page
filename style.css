@@ -75,6 +75,10 @@ a.logo span:first-child {
     margin: 0 10px;
 }
 
+.section-one {
+    max-height: 100vh;
+}
+
 .outline {
     display: flex;
     justify-content: space-between;
@@ -140,7 +144,7 @@ a.logo span:first-child {
 
 .toggle_darkmode {
     position: absolute;
-    right: -5%;
+    right: 0;
     bottom: 7%;
 }
 
