@@ -107,7 +107,8 @@ a.logo span:first-child {
     outline: none;
     cursor: pointer;
     border-radius: 20px;
-    max-width: 150px;
+    width: 170px;
+    text-align: center;
 }
 
 .shop_now_button:hover {
@@ -139,8 +140,8 @@ a.logo span:first-child {
 
 .toggle_darkmode {
     position: absolute;
-    right: 0;
-    bottom: 15%;
+    right: -5%;
+    bottom: 7%;
 }
 
 #toggleDarkMode {
@@ -175,10 +176,10 @@ a.logo span:first-child {
     body {
         background-position: center;
         background-position-x: 0;
-        padding: 0 40px;
+        padding: 0 30px;
     }
     a.logo {
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 10px;
     }
     .nav {
