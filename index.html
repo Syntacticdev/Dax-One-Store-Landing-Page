@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAX-ONE | Online Best Trading Store</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>DAX</span> <span>STORE</span></a>
+
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Faq</a></li>
+        </ul>
+
+        <div class="action_button">
+            <button class="cart"><i class="fas fa-shopping-bag fa-2x"></i></button>
+            <button class="dropMenu"><i class="fas fa-bars fa-2x"></i></button>
+        </div>
+    </header>
+
+    <section class="section-one">
+        <div class="outline">
+           <div>
+                <h2>Online</h2>
+                <h2>Shop</h2>
+
+                <!-- lorem 50 -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, architecto autem in ducimus error odio similique deleniti
+                 illum odit incidunt ratione facere dicta debitis. 
+                 Quae maiores officiis veniam rerum fugit nesciunt dolore autem nam aliquam, consequatur aut libero sit quam facilis, 
+                Corporis ab fugiat nemo et neque accusamus repella
+                </p>
+           </div>
+
+           <a href="" class="shop_now_button">Shop Now</a>
+
+            <div class="social-link">
+                <a href="" class="facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="" class="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="" class="youtube"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="toggle_darkmode">
+        <button id="toggleDarkMode">DARK MODE</button>
+    </div>
+
+    <script>
+        const darkMode = document.querySelector('#toggleDarkmode');
+        const anchorTags = document.querySelectorAll('.nav li a');
+        const action_Icon = document.querySelectorAll('.action_button .fas')
+        darkMode.addEventListener('click',function
+        (){
+           const body = document.body
+
+           if(!body.classList.contains('darkMode')){
+               darkMode.style.background = "#ff99e3"
+               body.classList.add('darkMode')
+               darkMode.textContent = "LIGHT MODE"
+               action_Icon.forEach(icon =>{
+                icon.style.color = "#ff99e3"
+               })
+               anchorTags.forEach(anchorTag => {
+                   anchorTag.classList.add('anchorTagDarkMode')
+                })
+            } else {
+               body.classList.remove('darkMode')
+               anchorTags.forEach(anchorTag => {
+                anchorTag.classList.remove('anchorTagDarkMode')
+               })
+               darkMode.textContent = "DARK MODE"
+               darkMode.style.background = "#000000"
+           }
+        })
+    </script>
+</body>
+</html>
